@@ -19,17 +19,17 @@ pip install langchain streamlit python-dotenv
 
 ## Getting Started
 
-1. Clone this repository to your local machine-
+1. Clone this repository to your local machine.
 
         git clone https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit.git
 
 
-2. Change into the project directory- 
+2. Change into the project directory.
 
         cd AI-AssistedDeveloperToolkit
 
 
-3. Install the required Python packages using pip-
+3. Install the required Python packages using pip.
 
         pip install -r requirements.txt
 
@@ -64,15 +64,15 @@ pip install langchain streamlit python-dotenv
 
     1. Test Case Generator-
 
-        ![Alt Text](images\test_case_console.png)
+        ![Test Generator Console](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/images/test_case_console.png)
 
-        ![Alt Text](images\test_case_ui.png)
+        ![Test Generator UI](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/images/test_case_ui.png)
 
     2. SQL Query Generator- 
 
-        ![Alt Text](images\sql_console.png)
+        ![SQL Query Genertor Console](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/images/sql_console.png)
 
-        ![Alt Text](images\sql_ui.png)
+        ![SQL Query Generator UI](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/images/sql_ui.png)
 
 
 # Insights 
