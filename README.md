@@ -21,22 +21,22 @@ pip install langchain streamlit python-dotenv
 
 1. Clone this repository to your local machine.
 
-    git clone https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit.git
+        git clone https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit.git
 
 
 2. Change into the project directory.
 
-    cd AI-AssistedDeveloperToolkit
+        cd AI-AssistedDeveloperToolkit
 
 
 3. Install the required Python packages using pip.
 
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
 
 4. Create a `.env` file in the project directory and provide your OpenAI API key.
 
-    OPENAI_API_KEY=your-api-key
+        OPENAI_API_KEY=your-api-key
 
 
 ## Usage
