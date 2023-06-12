@@ -85,9 +85,9 @@ pip install langchain streamlit python-dotenv
 
     1. Code Generator -
 
-![Code Generator](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/code_generator_console.png)
+![Code Generator](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/Code_generator_console.png)
 
-![Code Generator](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/code_genrator_ui.png)
+![Code Generator](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/blob/main/images/code_generator_ui.png)
 
     2. Test Case Generator-
 
