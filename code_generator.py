@@ -15,7 +15,8 @@ st.title('🦜🔗 Code Generator')
 def generate_file_code(
     filename, language, files, prompt, 
 ):
-    prompt_template=PromptTemplate(input_variables=['prompt', 'language', 'files', 'filename'], template="""You are an AI developer working on a code generation program. Here are the details:
+    prompt_template=PromptTemplate(input_variables=['prompt', 'language', 'files', 'filename'], 
+            template="""You are an AI developer working on a code generation program. Here are the details:
             App: {prompt}
             Files to generate: {files}
             Language: {language}

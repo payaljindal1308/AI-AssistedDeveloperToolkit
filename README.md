@@ -71,7 +71,7 @@ pip install langchain streamlit python-dotenv
 
     1. Code Generator -
 
-![Code Generator](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/Code_generator_console.png)
+![Code Generator](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/code_generator_console.png)
 
 ![Code Generator](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/code_genrator_ui.png)
 
@@ -91,18 +91,20 @@ pip install langchain streamlit python-dotenv
 
 # Insights 
 
-By adopting this approach, we can create a user-friendly application that leverages the capabilities of language models to generate SQL queries or test cases based on user input. The integration of LangChain and Streamlit simplifies development while allowing for customization and extensibility.
+Throughout the development process of this project, I encountered various challenges and made necessary adjustments to overcome them. Here are some key insights gained:
 
-The prompt-driven approach of LangChain makes it easy to customize the template, enabling developers to structure and interact with the language model effectively. The power of LLMs (Language Model Models) opens up possibilities for extending this project to assist developers in writing applications with great ease.
+SQL Query Generator: The initial implementation of the SQL query generator was relatively straightforward, and I was able to create the application without much difficulty.
 
-For example, additional utilities can be added to the application, such as a code generator utility or the ability to generate environment files, further enhancing its usefulness to developers.
+Test Case Generator: When working on the test case generator, I faced some challenges due to code truncation limitations imposed by the OpenAI model. The generated code was getting cut off, which impacted the accuracy and usefulness of the test cases. This required finding a workaround to handle code truncation.
 
-Currently, the project generates one test case at a time. However, with future updates, it can be expanded to generate multiple test cases, providing even more comprehensive testing capabilities.
+Code Generator: Developing the app code generator presented a few difficulties. Firstly, larger files had their code truncated. To address this, I experimented with the max_tokens parameter in the model wrapper and found that setting it to a larger value, such as 500 or 1000, resolved the issue.
 
+Invalid Argument Errors: I encountered some errors related to invalid arguments because the OpenAI request was including unnecessary explanations and filenames in the generated code. To rectify this, I modified the template instructions to exclude any explanations and only return valid code, which successfully resolved the issue.
 
-# Iterative Approach
+Model Selection: Switching between different models, such as from text-davinci-003 to code-davinci-002 or the default model, had an impact on the precision and organization of the generated code. By experimenting with different models, I found the most suitable one for generating accurate and well-structured code.
 
-1. 
+By iteratively addressing these challenges and making adjustments to the code and instructions, I was able to enhance the performance and usability of the application. These insights demonstrate the importance of iterative development and the need for adaptability when working with language models like OpenAI's GPT-3.5.
+
 
 ## Acknowledgements
 
