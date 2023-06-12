@@ -1,11 +1,22 @@
 #  AI-Assisted Developer Toolkit
 
-This is a Python application that assists a developer in various tasks and makes it easy for them to write code. 
-It utilizes the LangChain library, which provides a framework for working with language models such as OpenAI's GPT-3.5.
-1. It generates SQL queries based on user input. 
-2. It also helps the developer write the testcases for a given function in python.
-3. It helps developer generate a full application code by specifying the application details in prompt, language to be used and directory name in which to save the app.
+## Overview
 
+This Python application is designed to assist developers in various tasks, making it easier for them to write code. It leverages the LangChain library, which serves as a framework for working with language models like OpenAI's GPT-3.5. The application offers the following functionalities:
+
+SQL Query Generation: Users can input their requirements, and the application generates SQL queries based on the given input.
+
+Test Case Generation: The application aids developers in writing test cases for a specific Python function. This feature automates the process and saves time for the developer.
+
+Application Code Generation: By providing necessary details such as application specifications, desired programming language, and directory name for saving the app, developers can generate a complete application code.
+
+## Experimentation and Examples
+
+The "experiments" directory contains different approaches and iterations taken during the development of this application. These files showcase the experimentation process and demonstrate how the application evolved over time.
+
+Additionally, the "examples_generated" directory showcases some example applications that have been generated using the code generator feature. These examples serve as a reference and demonstrate the capabilities of the application in creating functional code for various applications.
+
+Overall, the application serves as a valuable toolkit for developers, providing assistance in SQL query generation, test case writing, and complete application code generation. The experimentation and example directories further illustrate the evolution and effectiveness of the application.
 
 ## Prerequisites
 
@@ -31,13 +42,16 @@ pip install langchain streamlit python-dotenv
 
         cd AI-AssistedDeveloperToolkit
 
+3. Generate the python environment and activate it using the follwoing commands-
 
-3. Install the required Python packages using pip.
+        python -m venv venv
+        .venv/Scripts/Activate
+
+4. Install the required Python packages using pip.
 
         pip install -r requirements.txt
 
-
-4. Create a `.env` file in the project directory and provide your OpenAI API key.
+5. Create a `.env` file in the project directory and provide your OpenAI API key.
 
         OPENAI_API_KEY=your-api-key
 
@@ -61,7 +75,7 @@ pip install langchain streamlit python-dotenv
 
 2. The application will launch in your browser.
 
-3. Enter your text or code snippet in the text area.
+3. Enter your text or code snippet or prompt for app in the text area.
 
 4. Click the "Generate Query" button if it is sql query generator or Generate test cases button to generate the test cases or "Generate App" to generate code. 
 
