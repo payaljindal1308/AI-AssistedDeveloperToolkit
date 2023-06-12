@@ -1,7 +1,10 @@
 #  AI-Assisted Developer Toolkit
 
-This is a Python application that assists a developer in various tasks and makes it easy for them to write code. It generates SQL queries based on user input. It utilizes the LangChain library, which provides a framework for working with language models such as OpenAI's GPT-3.5.
-It also helps the developer write the testcases for a given function in python.
+This is a Python application that assists a developer in various tasks and makes it easy for them to write code. 
+It utilizes the LangChain library, which provides a framework for working with language models such as OpenAI's GPT-3.5.
+1. It generates SQL queries based on user input. 
+2. It also helps the developer write the testcases for a given function in python.
+3. It helps developer generate a full application code by specifying the application details in prompt, language to be used and directory name in which to save the app.
 
 
 ## Prerequisites
@@ -51,28 +54,39 @@ pip install langchain streamlit python-dotenv
 
         streamlit run sql_query_generator.py
 
+    C. To run the code generator
+
+        streamlit run code_generator.py
+
 
 2. The application will launch in your browser.
 
 3. Enter your text or code snippet in the text area.
 
-4. Click the "Generate Query" button if it is sql query generator or Generate test cases button to generate the test cases.
+4. Click the "Generate Query" button if it is sql query generator or Generate test cases button to generate the test cases or "Generate App" to generate code. 
 
 5. The generated SQL query or test cases will be displayed on the screen.
 
 # Images
 
-    1. Test Case Generator-
+    1. Code Generator -
 
-        ![Test Generator Console](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/images/test_case_console.png)
+![Code Generator](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/Code_generator_console.png)
 
-        ![Test Generator UI](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/images/test_case_ui.png)
+![Code Generator](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/code_genrator_ui.png)
 
-    2. SQL Query Generator- 
+    2. Test Case Generator-
 
-        ![SQL Query Genertor Console](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/images/sql_console.png)
+![Test Generator Console](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/sql_console.png)
 
-        ![SQL Query Generator UI](https://github.com/payaljindal1308/AI-AssistedDeveloperToolkit/images/sql_ui.png)
+![Test Generator UI](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/test_case_ui.png)
+
+
+    3. SQL Query Generator- 
+
+![SQL Query Genertor Console](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/sql_console.png)
+
+![SQL Query Generator UI](https://raw.githubusercontent.com/payaljindal1308/AI-AssistedDeveloperToolkit/main/images/sql_ui.png)
 
 
 # Insights 
@@ -85,10 +99,10 @@ For example, additional utilities can be added to the application, such as a cod
 
 Currently, the project generates one test case at a time. However, with future updates, it can be expanded to generate multiple test cases, providing even more comprehensive testing capabilities.
 
-## Customization
 
-If you want to modify the behavior or appearance of the application, you can make changes to the `testcase_generator.py` file or `sql_query_generator.py`.
+# Iterative Approach
 
+1. 
 
 ## Acknowledgements
 
