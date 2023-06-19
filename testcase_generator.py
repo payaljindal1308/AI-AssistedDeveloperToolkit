@@ -7,7 +7,7 @@ from langchain.memory import ConversationBufferMemory
 from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv())
-llm = OpenAI(model_name="text-davinci-003")
+llm = OpenAI(temperature=0.5, max_tokens=1000)
 
 def generate_test_cases(user_input):
     template = """

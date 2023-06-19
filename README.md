@@ -109,13 +109,17 @@ Throughout the development process of this project, I encountered various challe
 
 SQL Query Generator: The initial implementation of the SQL query generator was relatively straightforward, and I was able to create the application without much difficulty.
 
-Test Case Generator: When working on the test case generator, I faced some challenges due to code truncation limitations imposed by the OpenAI model. The generated code was getting cut off, which impacted the accuracy and usefulness of the test cases. This required finding a workaround to handle code truncation.
+Test Case Generator: When working on the test case generator, I faced some challenges due to code truncation limitations imposed by the OpenAI model. The generated code was getting cut off, which impacted the accuracy and usefulness of the test cases. This required finding a workaround to handle code truncation. Then I changed the model from text-davinci to default which is GPT-3.5 turbo and also changed the temparature parameter to 0.5 from 0.9. and saw that my tests were not getting truncated and they were also more accurate.
+
 
 Code Generator: Developing the app code generator presented a few difficulties. Firstly, larger files had their code truncated. To address this, I experimented with the max_tokens parameter in the model wrapper and found that setting it to a larger value, such as 500 or 1000, resolved the issue.
 
+
+Code Accuracy: While generating different outputs, I also noticed that some part of the generated code was getting replicated and code needs to be changed for accuracy, to resolve this issue, I tried changing the temperature parameter from 0.9 to smaller values and that made the generated code more accurate. Although it improved but further optimization is possible with more efforts.
+
 Invalid Argument Errors: I encountered some errors related to invalid arguments because the OpenAI request was including unnecessary explanations and filenames in the generated code. To rectify this, I modified the template instructions to exclude any explanations and only return valid code, which successfully resolved the issue.
 
-Model Selection: Switching between different models, such as from text-davinci-003 to code-davinci-002 or the default model, had an impact on the precision and organization of the generated code. By experimenting with different models, I found the most suitable one for generating accurate and well-structured code.
+Model Selection: Switching between different models, such as from text-davinci-003 to code-davinci-002 or the default model(GPT-3.5 turbo), had an impact on the precision and organization of the generated code. By experimenting with different models, I found the most suitable one for generating accurate and well-structured code.
 
 By iteratively addressing these challenges and making adjustments to the code and instructions, I was able to enhance the performance and usability of the application. These insights demonstrate the importance of iterative development and the need for adaptability when working with language models like OpenAI's GPT-3.5.
 
